@@ -13,7 +13,7 @@ import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMax.IdleMode;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import com.revrobotics.ControlType;
-import com.ctre.phoenix.motorcontrol.DemandType;
+
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.NeutralMode;
 import com.ctre.phoenix.motorcontrol.can.*;
@@ -103,8 +103,7 @@ public class Robot extends TimedRobot {
     maxRPM_Top = 15000;
 
 
-    boolean[] _previousBtns = new boolean[10];
-    boolean[] _currentBtns = new boolean[10];
+
 
     // set PID coefficients
     m_pidController.setP(kP);
